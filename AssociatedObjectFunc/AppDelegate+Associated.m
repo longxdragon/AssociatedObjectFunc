@@ -46,6 +46,7 @@
 }
 
 // 3. Creating an associated observer for KVO
+// [self addObserver:self forKeyPath:keyPath options:NSKeyValueObservingOptionNew context:nil];
 - (void)addKeyValueObserver {
     NSString *keyPath = NSStringFromSelector(@selector(lx_categroyPrivateParam));
     [self addObserver:self forKeyPath:keyPath options:NSKeyValueObservingOptionNew context:nil];
